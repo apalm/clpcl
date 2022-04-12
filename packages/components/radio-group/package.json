@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-radio-group.cjs.js",
+  "module": "dist/cl-privacy-components-radio-group.esm.js"
+}

@@ -1,0 +1,68 @@
+/* TODO: dedupe */
+[data-ph-vars-pressable] {
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-pressable] {
+    /*  */
+  }
+}
+
+[data-ph-pressable] {
+  box-sizing: border-box;
+  display: block;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* End inline */
+
+
+[data-reach-alert][data-ph-flash-message] {
+  position: fixed;
+  top: var(--sp4);
+  left: var(--sp4);
+  right: var(--sp4);
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font-weight: 500;
+  border-radius: var(--br3);
+  padding: var(--sp2) var(--sp3);
+  color: var(--flash-message-color);
+  background-color: var(--flash-message-background-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--flash-message-border-color);
+}
+
+[data-ph-flash-message-variant="success"] {
+  --flash-message-color: var(--color-success-500);
+  --flash-message-background-color: var(--color-success-000);
+  --flash-message-border-color: var(--color-success-000);
+}
+
+[data-ph-flash-message-variant="error"] {
+  --flash-message-color: var(--color-danger-500);
+  --flash-message-background-color: var(--color-danger-000);
+  --flash-message-border-color: var(--color-danger-000);
+}
+
+[data-reach-alert][data-ph-flash-message] > svg:first-of-type {
+  margin-inline-end: var(--sp2);
+}
+
+[data-reach-alert][data-ph-flash-message] > button:last-of-type {
+  display: flex;
+  flex: none;
+  margin-inline-start: var(--sp2);
+}

@@ -1,0 +1,151 @@
+:root {
+  --reach-combobox: 1;
+}
+
+[data-reach-combobox-popover] {
+  border: solid 1px hsla(0, 0%, 0%, 0.25);
+  background: hsla(0, 100%, 100%, 0.99);
+  font-size: 85%;
+}
+
+[data-reach-combobox-list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+[data-reach-combobox-option] {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+}
+
+[data-reach-combobox-option][aria-selected="true"] {
+  background: hsl(211, 10%, 95%);
+}
+
+[data-reach-combobox-option]:hover {
+  background: hsl(211, 10%, 92%);
+}
+
+[data-reach-combobox-option][aria-selected="true"]:hover {
+  background: hsl(211, 10%, 90%);
+}
+
+[data-suggested-value] {
+  font-weight: bold;
+}
+
+/* End inline */
+
+/* TODO: dedupe */
+[data-ph-vars-form-control] {
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-form-control] {
+    /*  */
+  }
+}
+
+[data-ph-form-control] {
+}
+
+[data-ph-form-control-label] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp1);
+  font-weight: 500;
+  color: var(--color-neutral-800);
+}
+
+[data-ph-form-control-helper-text],
+[data-ph-form-control-error] {
+  font-size: var(--fs0);
+  margin-block-start: var(--sp1);
+}
+
+[data-ph-form-control-helper-text] {
+  color: var(--color-neutral-500);
+}
+
+[data-ph-form-control-error] {
+  color: var(--color-danger-600);
+}
+
+/* End inline */
+
+
+[data-ph-input] {
+  --input-background-color: white;
+  --input-border-color: var(--color-neutral-200);
+  --input-placeholder-color: var(--color-neutral-400);
+  --input-focused-border-color: var(--color-primary-l);
+  --input-focused-box-shadow: var(--color-primary-ll) 0 0 0 4px;
+  --input-errored-border-color: var(--color-danger-500);
+  --input-errored-box-shadow: var(--color-danger-100) 0 0 0 4px;
+
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--fs3);
+  vertical-align: middle;
+  border-radius: var(--br2);
+  padding: 0 var(--sp3);
+  appearance: none;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-input] {
+    /* --input-background-color: yellow; */
+  }
+}
+
+[data-ph-input]::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+[data-ph-input]:focus {
+  box-shadow: var(--input-focused-box-shadow);
+  border-color: var(--input-focused-border-color);
+}
+
+[data-ph-input]:disabled,
+[data-ph-input][readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+[data-ph-input][aria-invalid="true"] {
+  border-color: var(--input-errored-border-color);
+}
+
+[data-ph-input][aria-invalid="true"]:focus {
+  box-shadow: var(--input-errored-box-shadow);
+  border-color: var(--input-errored-border-color);
+}
+
+/* End inline */
+
+
+[data-reach-combobox-popover] {
+  --combobox-popover-background: white;
+
+  background: var(--combobox-popover-background);
+  font: inherit;
+  border: none;
+  border-radius: var(--br3);
+  box-shadow: var(--box-shadow-1);
+  padding: var(--sp2) 0;
+}
+
+[data-reach-combobox-option] {
+  padding: var(--sp1) var(--sp3);
+}

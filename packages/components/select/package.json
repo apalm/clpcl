@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-select.cjs.js",
+  "module": "dist/cl-privacy-components-select.esm.js"
+}

@@ -1,0 +1,25 @@
+[data-ph-vars-select] {
+  --select-background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-select] {
+    /* --select-background-color: yellow; */
+  }
+}
+
+[data-ph-select] {
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--fs3);
+  vertical-align: middle;
+  border-radius: var(--form-control-border-radius);
+  padding: 0 var(--sp3);
+  border: none;
+  appearance: none;
+  outline: 0;
+  height: var(--form-control-height);
+  background-color: var(--select-background-color);
+}

@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-badge.cjs.js",
+  "module": "dist/cl-privacy-components-badge.esm.js"
+}

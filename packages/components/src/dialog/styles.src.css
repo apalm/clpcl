@@ -1,0 +1,33 @@
+@import url("../../../../node_modules/@reach/dialog/styles.css");
+
+[data-reach-dialog-overlay] {
+  --dialog-overlay-background: hsla(211, 30%, 10%, 0.6);
+
+  background: var(--dialog-overlay-background);
+}
+
+[data-reach-dialog-content] {
+  --dialog-content-background: white;
+  --dialog-content-width: 90vw;
+
+  background: var(--dialog-content-background);
+  width: var(--dialog-content-width);
+  overflow-y: scroll;
+  padding: 0;
+  margin: var(--sp8) auto;
+  border-radius: var(--br1);
+  box-shadow: var(--box-shadow-1);
+}
+
+[data-reach-alert-dialog-label] {
+  font-size: var(--fs6);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  [data-reach-dialog-content] {
+    --dialog-content-width: 80vw;
+
+    max-width: 720px;
+  }
+}

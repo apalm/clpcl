@@ -1,0 +1,79 @@
+{
+  "name": "@cl-privacy/components",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/cl-privacy-components.cjs.js",
+  "module": "dist/cl-privacy-components.esm.js",
+  "types": "dist/cl-privacy-components.cjs.d.ts",
+  "files": [
+    "README.md",
+    "dist",
+    "alert",
+    "alert-dialog",
+    "avatar",
+    "badge",
+    "button",
+    "checkbox",
+    "combobox",
+    "dialog",
+    "flash-message",
+    "form-control",
+    "input",
+    "link",
+    "menu-button",
+    "pressable",
+    "radio-group",
+    "select",
+    "table",
+    "textarea",
+    "tooltip"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {
+    "@reach/alert": "^0.16.0",
+    "@reach/alert-dialog": "^0.16.0",
+    "@reach/combobox": "^0.16.0",
+    "@reach/dialog": "^0.16.0",
+    "@reach/menu-button": "^0.16.0",
+    "@reach/portal": "^0.16.0",
+    "@reach/tooltip": "^0.16.0",
+    "@reach/utils": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || 17.x || 18.x",
+    "react-dom": "^16.8.0 || 17.x || 18.x",
+    "react-icons": "^4.3.1"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.tsx",
+      "alert/index.tsx",
+      "alert-dialog/index.tsx",
+      "avatar/index.tsx",
+      "badge/index.tsx",
+      "button/index.tsx",
+      "checkbox/index.tsx",
+      "combobox/index.tsx",
+      "dialog/index.tsx",
+      "flash-message/index.tsx",
+      "form-control/index.tsx",
+      "input/index.tsx",
+      "link/index.tsx",
+      "menu-button/index.tsx",
+      "pressable/index.tsx",
+      "radio-group/index.tsx",
+      "select/index.tsx",
+      "table/index.tsx",
+      "textarea/index.tsx",
+      "tooltip/index.tsx"
+    ]
+  },
+  "gitHead": "3efb4a1aadd87d0fcc2e49b0dceea76f57a7b567"
+}

@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-flash-message.cjs.js",
+  "module": "dist/cl-privacy-components-flash-message.esm.js"
+}

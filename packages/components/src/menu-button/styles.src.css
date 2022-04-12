@@ -1,0 +1,31 @@
+@import url("../../../../node_modules/@reach/menu-button/styles.css");
+
+[data-reach-menu-popover] {
+  font: inherit;
+  border: none;
+  border-radius: var(--br2);
+  box-shadow: var(--box-shadow-1);
+  background: white;
+}
+
+[data-reach-menu-list],
+[data-reach-menu-items] {
+  outline: none;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: var(--sp1) 0;
+}
+
+[data-reach-menu-item] {
+  display: block;
+  padding: var(--sp2) var(--sp4);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+[data-reach-menu-item][data-selected] {
+  background-color: var(--color-primary-lll);
+  color: inherit;
+}

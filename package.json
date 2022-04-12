@@ -1,0 +1,29 @@
+{
+  "name": "@cl-privacy/component-lib",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@preconstruct/cli": "^2.1.5",
+    "fs-extra": "^10.0.1",
+    "globby": "11.1.0",
+    "lerna": "^4.0.0",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "build": "preconstruct build && node ./scripts/process-css.js",
+    "postinstall": "preconstruct dev",
+    "prepublishOnly": "npm run build"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

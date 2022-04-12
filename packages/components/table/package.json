@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-table.cjs.js",
+  "module": "dist/cl-privacy-components-table.esm.js"
+}

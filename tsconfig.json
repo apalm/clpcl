@@ -1,0 +1,23 @@
+{
+  "include": ["packages", "types", "scripts"],
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": false,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "module": "ES2022",
+    // https://preconstruct.tools/guides/building-typescript-packages
+    "isolatedModules": true,
+    "target": "ES2020",
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "paths": {
+      "$test/*": ["test/*"]
+    }
+  }
+}

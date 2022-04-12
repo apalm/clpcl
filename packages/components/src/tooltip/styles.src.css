@@ -1,0 +1,11 @@
+@import url("../../../../node_modules/@reach/tooltip/styles.css");
+
+[data-reach-tooltip] {
+  color: white;
+  background-color: var(--color-neutral-800);
+  border: none;
+  border-radius: var(--br2);
+  padding: var(--sp1) var(--sp2);
+  font: inherit;
+  font-size: var(--fs0);
+}

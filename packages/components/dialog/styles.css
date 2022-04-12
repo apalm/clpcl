@@ -1,0 +1,59 @@
+/* This code is subject to LICENSE in root of this repository */
+
+/* Used to detect in JavaScript if apps have loaded styles or not. */
+:root {
+  --reach-dialog: 1;
+}
+
+[data-reach-dialog-overlay] {
+  background: hsla(0, 0%, 0%, 0.33);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+
+[data-reach-dialog-content] {
+  width: 50vw;
+  margin: 10vh auto;
+  background: white;
+  padding: 2rem;
+  outline: none;
+}
+
+/* End inline */
+
+
+[data-reach-dialog-overlay] {
+  --dialog-overlay-background: hsla(211, 30%, 10%, 0.6);
+
+  background: var(--dialog-overlay-background);
+}
+
+[data-reach-dialog-content] {
+  --dialog-content-background: white;
+  --dialog-content-width: 90vw;
+
+  background: var(--dialog-content-background);
+  width: var(--dialog-content-width);
+  overflow-y: scroll;
+  padding: 0;
+  margin: var(--sp8) auto;
+  border-radius: var(--br1);
+  box-shadow: var(--box-shadow-1);
+}
+
+[data-reach-alert-dialog-label] {
+  font-size: var(--fs6);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  [data-reach-dialog-content] {
+    --dialog-content-width: 80vw;
+
+    max-width: 720px;
+  }
+}

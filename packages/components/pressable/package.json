@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-pressable.cjs.js",
+  "module": "dist/cl-privacy-components-pressable.esm.js"
+}

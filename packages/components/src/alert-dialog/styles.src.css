@@ -1,0 +1,22 @@
+@import url("../../dialog/styles.css");
+
+[data-ph-alert-dialog-actions] {
+  --alert-dialog-actions-border-color: var(--color-neutral-100);
+  --alert-dialog-actions-background-color: var(--color-neutral-000);
+
+  display: grid;
+  gap: var(--sp2) var(--sp3);
+  padding: var(--sp3) var(--sp5);
+  border-block-start-width: 1px;
+  border-block-start-style: solid;
+  border-block-start-color: var(--alert-dialog-actions-border-color);
+  background-color: var(--alert-dialog-actions-background-color);
+}
+
+@media (min-width: 768px) {
+  [data-ph-alert-dialog-actions] {
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+  }
+}

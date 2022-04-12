@@ -1,0 +1,17 @@
+@import url("../../../../node_modules/@reach/combobox/styles.css");
+@import url("../../input/styles.css");
+
+[data-reach-combobox-popover] {
+  --combobox-popover-background: white;
+
+  background: var(--combobox-popover-background);
+  font: inherit;
+  border: none;
+  border-radius: var(--br3);
+  box-shadow: var(--box-shadow-1);
+  padding: var(--sp2) 0;
+}
+
+[data-reach-combobox-option] {
+  padding: var(--sp1) var(--sp3);
+}

@@ -1,0 +1,92 @@
+/* TODO: dedupe */
+[data-ph-vars-form-control] {
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-form-control] {
+    /*  */
+  }
+}
+
+[data-ph-form-control] {
+}
+
+[data-ph-form-control-label] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp1);
+  font-weight: 500;
+  color: var(--color-neutral-800);
+}
+
+[data-ph-form-control-helper-text],
+[data-ph-form-control-error] {
+  font-size: var(--fs0);
+  margin-block-start: var(--sp1);
+}
+
+[data-ph-form-control-helper-text] {
+  color: var(--color-neutral-500);
+}
+
+[data-ph-form-control-error] {
+  color: var(--color-danger-600);
+}
+
+/* End inline */
+
+
+[data-ph-input] {
+  --input-background-color: white;
+  --input-border-color: var(--color-neutral-200);
+  --input-placeholder-color: var(--color-neutral-400);
+  --input-focused-border-color: var(--color-primary-l);
+  --input-focused-box-shadow: var(--color-primary-ll) 0 0 0 4px;
+  --input-errored-border-color: var(--color-danger-500);
+  --input-errored-box-shadow: var(--color-danger-100) 0 0 0 4px;
+
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  font-family: inherit;
+  font-size: var(--fs3);
+  vertical-align: middle;
+  border-radius: var(--br2);
+  padding: 0 var(--sp3);
+  appearance: none;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-input] {
+    /* --input-background-color: yellow; */
+  }
+}
+
+[data-ph-input]::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+[data-ph-input]:focus {
+  box-shadow: var(--input-focused-box-shadow);
+  border-color: var(--input-focused-border-color);
+}
+
+[data-ph-input]:disabled,
+[data-ph-input][readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+[data-ph-input][aria-invalid="true"] {
+  border-color: var(--input-errored-border-color);
+}
+
+[data-ph-input][aria-invalid="true"]:focus {
+  box-shadow: var(--input-errored-box-shadow);
+  border-color: var(--input-errored-border-color);
+}

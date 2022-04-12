@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-combobox.cjs.js",
+  "module": "dist/cl-privacy-components-combobox.esm.js"
+}

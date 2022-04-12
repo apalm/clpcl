@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-checkbox.cjs.js",
+  "module": "dist/cl-privacy-components-checkbox.esm.js"
+}

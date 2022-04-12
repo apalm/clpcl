@@ -1,0 +1,22 @@
+[data-ph-radio] {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: var(--sp3) var(--sp3);
+}
+
+[data-ph-radio-group-radio-label] {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--sp2);
+  font-weight: 500;
+  color: var(--color-neutral-800);
+  line-height: 1;
+}
+
+[data-ph-radio-group-label] {
+  font-weight: 500;
+  color: var(--color-neutral-800);
+  margin-block-end: var(--sp2);
+}

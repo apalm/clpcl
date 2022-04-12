@@ -1,0 +1,23 @@
+[data-reach-alert][data-ph-alert] {
+  display: flex;
+  flex: none;
+  align-items: center;
+  font-weight: 500;
+  border-radius: var(--br3);
+  padding: var(--sp2) var(--sp3);
+  color: var(--alert-color);
+  background-color: var(--alert-background-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--alert-border-color);
+}
+
+[data-ph-alert-variant="error"] {
+  --alert-color: var(--color-danger-500);
+  --alert-background-color: var(--color-danger-000);
+  --alert-border-color: var(--color-danger-000);
+}
+
+[data-reach-alert][data-ph-alert] > svg:first-of-type {
+  margin-inline-end: var(--sp2);
+}

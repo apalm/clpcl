@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-alert.cjs.js",
+  "module": "dist/cl-privacy-components-alert.esm.js"
+}

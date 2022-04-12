@@ -1,0 +1,63 @@
+[data-ph-avatar] {
+  --avatar-size: 40px;
+  --avatar-font-size: var(--fs3);
+
+  position: relative;
+  object-fit: cover;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-800);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  font-size: var(--avatar-font-size);
+}
+
+[data-ph-avatar][src$=".svg"] {
+  object-fit: contain;
+  padding: 7px;
+}
+
+[data-ph-avatar-size="xs"] {
+  --avatar-size: 26px;
+}
+
+[data-ph-avatar-size="sm"] {
+  --avatar-size: 32px;
+}
+
+[data-ph-avatar-size="lg"] {
+  --avatar-size: 48px;
+  font-size: var(--fs6);
+}
+
+[data-ph-avatar-size="xl"] {
+  --avatar-size: 64px;
+  font-size: var(--fs6);
+}
+
+[data-ph-avatar-size="xxl"] {
+  --avatar-size: 120px;
+  font-size: var(--fs9);
+}
+
+[data-ph-avatar-fallback-variant="solid"] {
+  display: inline-flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-ph-avatar-fallback-variant="outline"] {
+  display: inline-flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}

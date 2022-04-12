@@ -1,0 +1,4 @@
+{
+  "main": "dist/cl-privacy-components-tooltip.cjs.js",
+  "module": "dist/cl-privacy-components-tooltip.esm.js"
+}

@@ -1,0 +1,33 @@
+[data-ph-vars-form-control] {
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-ph-vars-form-control] {
+    /*  */
+  }
+}
+
+[data-ph-form-control] {
+}
+
+[data-ph-form-control-label] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp1);
+  font-weight: 500;
+  color: var(--color-neutral-800);
+}
+
+[data-ph-form-control-helper-text],
+[data-ph-form-control-error] {
+  font-size: var(--fs0);
+  margin-block-start: var(--sp1);
+}
+
+[data-ph-form-control-helper-text] {
+  color: var(--color-neutral-500);
+}
+
+[data-ph-form-control-error] {
+  color: var(--color-danger-600);
+}
